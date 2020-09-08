@@ -56,7 +56,7 @@ class Daemon_arp_spoofing():
 
             if (time.time() - t1) < self.t:
                 # sleep the time between the time execution and the time allowed by the user
-                time.sleep(self.t - (time.time() - t1 ))
+                time.sleep(self.t - (time.time() - t1))
             # raffect t1 to calculate
             t1 = time.time()
             if self.output or self.verbose:
